@@ -1,0 +1,30 @@
+.self-care {
+    @include titulo(self-care, $soself);
+    .icon-self {
+        position: absolute;
+        width: 4rem;
+        top: -5%;
+        left: 56%;
+    }
+    .container {
+        @include container;
+        .container-name-points {
+            @include container-name-points;
+            .name {
+                @include name;
+            }
+            .icon-ellipsis {
+                @include ellipsis-hover;
+            }
+        }
+        .container-hours {
+            @include container-hours;
+            .first6 {
+                @include first;
+            }
+            .second6 {
+                @include second;
+            }
+        }
+    }
+}

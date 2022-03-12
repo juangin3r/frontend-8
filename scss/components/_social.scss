@@ -1,0 +1,30 @@
+.social {
+    @include titulo(social, $vsocial);
+    .icon-social {
+        position: absolute;
+        width: 5rem;
+        top: -9%;
+        left: 54%;
+    }
+    .container {
+        @include container;
+        .container-name-points {
+            @include container-name-points;
+            .name {
+                @include name;
+            }
+            .icon-ellipsis {
+                @include ellipsis-hover;
+            }
+        }
+        .container-hours {
+            @include container-hours;
+            .first5 {
+                @include first;
+            }
+            .second5 {
+                @include second;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.work {
+    @include titulo(work, $lrwork);
+    .icon-work {
+        position: absolute;
+        width: 4.5rem;
+        top: -5%;
+        left: 54%;
+    }
+    .container {
+        @include container;
+        .container-name-points {
+            @include container-name-points;
+            .name {
+                @include name;
+            }
+            .icon-ellipsis {
+                @include ellipsis-hover;
+            }
+        }
+        .container-hours {
+            @include container-hours;
+            .first1 {
+                @include first;
+            }
+            .second1 {
+                @include second;
+            }
+        }
+    }
+}
